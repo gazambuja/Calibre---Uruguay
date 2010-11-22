@@ -40,13 +40,13 @@ class Noticias(BasicNewsRecipe):
            (u'Noticias', u'http://www.montevideo.com.uy/anxml.aspx?59'),
            (u'Tecnologia', u'http://www.montevideo.com.uy/anxml.aspx?133'),
            (u'Tiempo Libre', u'http://www.montevideo.com.uy/anxml.aspx?60'),
-           (u'Gastronomia', u'http://www.montevideo.com.uy/anxml.aspx?1023'),
-           (u'Deportes', u'http://www.montevideo.com.uy/anxml.aspx?968'),
-           (u'Pantallazo', u'http://www.montevideo.com.uy/anxml.aspx?1022')
+           # (u'Deportes', u'http://www.montevideo.com.uy/anxml.aspx?968'),
+           # (u'Pantallazo', u'http://www.montevideo.com.uy/anxml.aspx?1022'),
+           (u'Gastronomia', u'http://www.montevideo.com.uy/anxml.aspx?1023')
         ]
 
     def get_cover_url(self):
-		return 'http://desarrolla.montevideo.com.uy/imgnoticias/135.gif'
+		return 'http://sphotos.ak.fbcdn.net/hphotos-ak-snc1/hs276.snc1/10319_147339559330_147337559330_2625816_6636564_n.jpg'
 
 
     def preprocess_html(self, soup):

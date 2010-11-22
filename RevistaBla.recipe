@@ -2,7 +2,6 @@
 
 __license__   = 'GPL v3'
 __author__ = '2010, Gustavo Azambuja <hola at gazambuja.com>'
-__copyright__ = '2008, Kovid Goyal kovid@kovidgoyal.net'
 '''
 http://www.revistabla.com
 '''
@@ -25,14 +24,8 @@ class Noticias(BasicNewsRecipe):
     max_articles_per_feed = 100
     keep_only_tags = [dict(id=['body_container'])]
     remove_tags = [
-				 dict(name='div', attrs={'class':'date_text'}),
-				 dict(name='div', attrs={'class':'comments'}),
-				 dict(name='div', attrs={'class':'form_section'}),
-				 dict(name='div', attrs={'class':'share_it'}),
-				 dict(name='div', attrs={'id':'relatedPosts'}),
-				 dict(name='div', attrs={'id':'spacer'}),
-				 dict(name='div', attrs={'id':'banner_izquierda'}),
-				 dict(name='div', attrs={'id':'right_container'}),
+				 dict(name='div', attrs={'class':['date_text', 'comments', 'form_section', 'share_it']}),
+				 dict(name='div', attrs={'id':['relatedPosts', 'spacer', 'banner_izquierda', 'right_container']}),
 				 dict(name='p', attrs={'class':'FacebookLikeButton'}),
 				 dict(name=['object','link']) ]
 

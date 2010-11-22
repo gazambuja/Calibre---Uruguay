@@ -2,14 +2,13 @@
 
 __license__   = 'GPL v3'
 __author__ = '2010, Gustavo Azambuja <hola at gazambuja.com>'
-__copyright__ = '2008, Kovid Goyal kovid@kovidgoyal.net'
 '''
 ladiaria.com.uy
 '''
 
 from calibre.web.feeds.news import BasicNewsRecipe
 
-class LaDiaria(BasicNewsRecipe):
+class General(BasicNewsRecipe):
     title                 = 'La Diaria'
     __author__            = 'Gustavo Azambuja'
     description           = 'Noticias de Uruguay'

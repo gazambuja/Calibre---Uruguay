@@ -9,7 +9,7 @@ http://freeway.com.uy
 from calibre.web.feeds.news import BasicNewsRecipe
 
 class General(BasicNewsRecipe):
-    title                 = 'freeway.com.uy'
+    title                 = 'Freeway UY'
     __author__            = 'Gustavo Azambuja'
     description           = 'Revista Freeway, Montevideo, Uruguay'
     language       = 'es'
@@ -35,7 +35,7 @@ class General(BasicNewsRecipe):
     remove_attributes = ['width','height', 'style', 'font', 'color']
     
     extra_css = '''
-                h1{font-family:Geneva, Arial, Helvetica, sans-serif;color:#154B7A;}
+                h1{font-family:Geneva, Arial, Helvetica, sans-serif;color:#000000;}
                 h3{font-size: 14px;color:#999999; font-family:Geneva, Arial, Helvetica, sans-serif;font-weight: bold;}
                 h2{color:#666666; font-family:Geneva, Arial, Helvetica, sans-serif;font-size:small;}
                 img {float:left; clear:both; margin:10px}
